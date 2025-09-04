@@ -14,7 +14,7 @@ const BaseLayout = () => {
        </div>
        <div>
           <figure>
-              <div className='xl:hidden my-12 mx-5'><Nav/></div>
+              <div className='xl:hidden my-5 mx-5'><Nav/></div>
               <img src={hero} alt='' className='xl:hidden w-full' />
               <img src={heroDesk} alt=''  className=' hidden xl:block w-[800px] h-[100vh]  ' />
           </figure>
