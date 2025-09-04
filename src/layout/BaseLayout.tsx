@@ -5,8 +5,9 @@ import heroDesk from '../assets/images/hero-desktop.jpg'
 import Nav from '../components/Nav';
 const BaseLayout = () => {
   return (
-    <main className='flex flex-col-reverse xl:flex-row xl:justify-around text-b'>
-       <div className='xl:p-10  bg-[url(../assets/images/bg-pattern-desktop.svg)] bg-contain'>
+    <main className='flex flex-col-reverse xl:flex-row xl:justify-around text-b xl:bg-none
+      bg-gradient-to-br from-[#FFFFFF] to-[#FFF5F5]'>
+       <div className='xl:p-10  xl:bg-[url(/src/assets/images/bg-pattern-desktop.svg)] bg-cover'>
           <div className='hidden xl:block ml-27 my-4'><Nav/></div>
           <Section>
             <Form/>

@@ -37,7 +37,7 @@ const Form = () => {
           <input type='text' name='email' className={`w-[80%] ml-4 ${isError && 'placeholder-Red-0'} `}  value={email} onChange={handleInput}
            placeholder='Email Address' />
           {isError && <img src={ErrorIcon} className='absolute top-2 right-[30%] xl:right-[25%]'  alt=''/> }
-          <button type='submit' className='bg-Red-0 w-[20%]  rounded-3xl  '><img src={Arrow} alt='' className='m-auto' /> </button></div>
+          <button type='submit' className='bg-gradient-to-br from-[#F8BFBF] to-[#EE8C8C] w-[20%]  rounded-3xl  '><img src={Arrow} alt='' className='m-auto' /> </button></div>
          </div>
         <p className='ml-7 xl:ml-2 text-Red-0'>{error}</p>
     </form>

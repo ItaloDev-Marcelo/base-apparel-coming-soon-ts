@@ -4,7 +4,7 @@ const Nav = () => {
   return (
     <nav>
       <a href='#index.html'>
-        <img src={logo} alt='' />
+        <img src={logo}  alt='' />
       </a>
     </nav>
   )
