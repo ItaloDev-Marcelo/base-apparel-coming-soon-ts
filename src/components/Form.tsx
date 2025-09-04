@@ -31,14 +31,15 @@ const Form = () => {
 
 
   return (
-    <form onSubmit={submitHandle}>
-        <div>
-         <div className='flex relative'>
-          <input type='text' name='email'  value={email} onChange={handleInput} placeholder='Email Address' />
-          {isError && <img src={ErrorIcon} className='absolute'  alt=''/> }
-          <button type='submit' className='bg-red-400'><img src={Arrow} alt='' /> </button></div>
+    <form onSubmit={submitHandle} >
+        <div className='flex items-center justify-center xl:justify-start xl:items-start my-4 xl:mx-0 mx-auto w-[330px] xl:w-[450px]'>
+         <div className={`flex relative border-1 border-gray-300 rounded-3xl w-[290px] xl:w-[410px] h-10 xl:h-11 ${isError && 'border-red-400'} `}>
+          <input type='text' name='email' className={`w-[80%] ml-4 ${isError && 'placeholder-Red-0'} `}  value={email} onChange={handleInput}
+           placeholder='Email Address' />
+          {isError && <img src={ErrorIcon} className='absolute top-2 right-[30%] xl:right-[25%]'  alt=''/> }
+          <button type='submit' className='bg-Red-0 w-[20%]  rounded-3xl  '><img src={Arrow} alt='' className='m-auto' /> </button></div>
          </div>
-        <p>{error}</p>
+        <p className='ml-7 xl:ml-2 text-Red-0'>{error}</p>
     </form>
   )
 }

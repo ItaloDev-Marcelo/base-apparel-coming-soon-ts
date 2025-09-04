@@ -2,9 +2,30 @@
 @plugin "daisyui";
 
 
+/* from hsl(0, 0%, 100%) to hsl(0, 100%, 98%) → linear-gradient(135deg, #FFFFFF, #FFF5F5)
+
+from hsl(0, 80%, 86%) to hsl(0, 74%, 74%) → linear-gradient(135deg, #F8BFBF, #EE8C8C) */
+
+@theme {
+  --color-Pink-0: #CE9797;
+  --color-Red-0: #F96262;
+  --color-Gray-0: #413A3A;
+  --text-b: 1em;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+button {
+  transform: scale(1.1);
+}
 
 @media (min-width: 1280px) {
   body {
      overflow-y: hidden;
   }
+  button {
+  transform: scale(1.2);
+}
 }
