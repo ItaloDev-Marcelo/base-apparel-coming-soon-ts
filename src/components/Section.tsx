@@ -8,7 +8,7 @@ const Section = ({children}:HeaderProps) => {
         <div className='text-center xl:text-left mb-4 xl:w-[60%]'>
             <h1 className='text-[2.5em]  leading-[50px]  xl:leading-[70px]  mb-7'>
                 <span className='tracking-[3px] text-Pink-0 font-light xl:text-[1.2em]' >we're</span> <br />
-                <span className='tracking-[2px] text-[1.2em] xl:text-[1.5em] text-Gray-0 font-medium uppercase'>coming  <br className='hidden xl:block'/> soon</span>
+                <span className='tracking-[4px] text-[1.2em] xl:text-[1.5em] text-Gray-0 font-medium uppercase'>coming  <br className='hidden xl:block'/> soon</span>
             </h1>
             <p className='md:px-30 xl:px-0 text-Pink-0 '>Hello fellow shoppers! We're currently building our new fashion store. 
              Add your email below to stay up-to-date with announcements and our launch deals.</p>
